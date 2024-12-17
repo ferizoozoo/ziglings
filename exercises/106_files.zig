@@ -35,7 +35,7 @@ pub fn main() !void {
         // by doing nothing
         //
         // we want to catch error.PathAlreadyExists and do nothing
-        error.PathAlreadyExists => unreachable,
+        error.PathAlreadyExists => {},
         // if there's any other unexpected error we just propagate it through
         else => return e,
     };
